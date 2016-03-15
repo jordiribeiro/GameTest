@@ -6,7 +6,7 @@ while ($ac != 's' && $ac != 'n'){
 	$ac = trim(fgets(STDIN));
 }
 
-if ($ac = 's'){
+if ($ac == 's'){
 print "Digite um numero inteiro ente 1 e 100: ";
 $n = trim(fgets(STDIN));
 $al = rand(1,100);
@@ -24,6 +24,6 @@ print "Você acertou. Parábens!!!!";
 }
 else{
 	print "Talvez um proxama vez jogamos. ^^ ";
-	break;
+	close;
 }
 ?>
